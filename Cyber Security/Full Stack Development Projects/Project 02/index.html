@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumaila Junaid | Aspiring Cybersecurity & AI Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Jumaila Junaid</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hello-text">Hello, it’s me</p>
+                    <h1>Jumaila Junaid</h1>
+                    <h2>I'm a <span class="changing-text"></span></h2>
+                    <p>I am a passionate learner in Cybersecurity, AI, and Full Stack Development,
+                        focused on building secure and intelligent systems.</p>
+
+                    <a href="#projects" class="btn">View My Work</a>
+
+                    <!-- Optional: Social Links -->
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:fathimajumaila@example.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i></a>
+                    </div>
+
+                    <!-- Optional: Motto / Tagline -->
+                    <p class="tagline">“Coding with passion, creating with purpose.”</p>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS for rotating titles (optional, exam safe) -->
+    <script>
+        const roles = ["AI Developer", "Cybersecurity Analyst", "Full Stack Developer", "Software Engineer", "Web Developer"];
+        let i = 0;
+        setInterval(() => {
+            document.getElementById("role").textContent = roles[i];
+            i = (i + 1) % roles.length;
+        }, 2000); // 2 seconds-ku oru title change
+    </script>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate learner in Cybersecurity, AI, and Full Stack Development, with a foundation in C
+                        Programming. I create projects and showcase them on GitHub, continuously improving my skills
+                        through hands-on experience.
+                        I am currently pursuing the Foundation in Information Technology (FIT) program and aim to
+                        continue with BIT to strengthen my knowledge. My goal is to build a successful career in
+                        technology, focusing on secure and intelligent systems.
+                    </p>
+
+                    <!-- Education Section -->
+                    <h3>Education</h3>
+                    <ul>
+                        <li><strong>Foundation in Information Technology (FIT)</strong>, Colombo University (2026)</li>
+                        <li><strong>Bachelor of Information Technology (BIT)</strong>, Colombo University (2026-2029)
+                        </li>
+                        <li><strong>Marstech Courses:</strong> Hands-on projects in Cybersecurity, Artificial
+                            Intelligence, and Full Stack Web Development</li>
+                    </ul>
+
+                    <!-- Career Highlights Section -->
+                    <h3>Career Highlights</h3>
+                    <ul>
+                        <li>Developed hands-on projects in Cybersecurity, AI, and Full Stack Web Development through
+                            Marstech courses</li>
+                        <li>Built responsive and secure web applications, implementing best coding practices</li>
+                        <li>Gained practical experience in problem-solving, analytical thinking, and secure coding</li>
+                        <li>Continuously improving skills by working on real-world projects and showcasing them on
+                            GitHub</li>
+                        <li>Collaborated on small team projects, learning effective teamwork and project management
+                            skills</li>
+                    </ul>
+
+                    <h3>Personal Interests</h3>
+                    <p>
+                        When I'm not coding, I enjoy hiking, photography, and contributing to open source projects.
+                        I also like exploring new technologies, learning AI concepts, and improving my cybersecurity
+                        skills.
+                    </p>
+
+                    <!-- Optional tagline for uniqueness -->
+                    <p class="tagline">“Learning, creating, and securing the digital world.”</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill">
+                        <span class="skill-name">HTML5</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill">
+                        <span class="skill-name">Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">PHP</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="65%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skill">
+                        <span class="skill-name">Git</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Figma</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Web Accessibility</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects & Practical Work</h2>
+            <div class="projects-grid">
+                <!-- <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div> -->
+
+                <!-- AI Assignments -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Artificial Intelligence – Python Assignments</h3>
+                        <p>
+                            Completed multiple Python-based AI assignments focusing on logic building,
+                            problem-solving, and basic AI concepts as part of academic practice.
+                        </p>
+                        <div class="technologies">
+                            <span>Python</span>
+                            <span>AI Basics</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Practice -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cybersecurity & Ethical Hacking Practice</h3>
+                        <p>
+                            Practicing ethical hacking techniques through guided labs and attack simulations,
+                            including hands-on learning using platforms like Hack The Box.
+                        </p>
+                        <div class="technologies">
+                            <span>Ethical Hacking</span>
+                            <span>Cybersecurity</span>
+                            <span>Attack Simulation</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Stack Assignments -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Full Stack Development – HTML & CSS Assignments</h3>
+                        <p>
+                            Designed and developed multiple responsive web pages using HTML and CSS
+                            as part of Full Stack Development assignments.
+                        </p>
+                        <div class="technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- C Programming & Networking -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-server"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>C Programming & Networking Practice</h3>
+                        <p>
+                            Practicing C programming on Linux servers and gaining hands-on experience
+                            in networking concepts through remote practical sessions.
+                        </p>
+                        <div class="technologies">
+                            <span>C Programming</span>
+                            <span>Linux</span>
+                            <span>Networking</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+
+                <!-- Contact Form -->
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i>jumailajunaid25@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Sri Lanka</p>
+                    <p><i class="fas fa-graduation-cap"></i>BIT Student – University of Colombo</p>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jumaila Junaid. All rights reserved.</p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <p class="footer-tagline">
+                Aspiring Cybersecurity & AI Engineer | Full Stack Development Learner
+            </p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
