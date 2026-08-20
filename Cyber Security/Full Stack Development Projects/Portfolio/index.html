@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumaila Junaid | Full Stack Developer | AI & Cybersecurity Enthusiast</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dark-mode">
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="header-left">
+                <a href="#home" class="logo"><code>&lt;JJ/&gt;</code> Jumaila Junaid</a>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav" id="navbar">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false"
+                    aria-controls="navbar">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Welcome to my portfolio</span>
+                    </div>
+                    <p class="hello-text">Hello, it's me</p>
+                    <h1 class="hero-name">Jumaila Junaid</h1>
+                    <h2 class="hero-subtitle"><span class="typing"></span></h2>
+                    <p class="hero-desc">
+                        I’m a BIT undergraduate focused on building modern, user-friendly web applications and
+                        exploring innovative solutions in AI and Cybersecurity. I enjoy learning new technologies,
+                        developing practical projects, and continuously improving my technical skills.
+                    </p>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-briefcase"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="https://github.com/jumaila-junaid" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub" title="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jumaila-junaid-861492391" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:jumaila.it@gmail.com" class="social-icon" aria-label="Email" title="Send Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <!-- Motto / Tagline -->
+                    <p class="tagline">"Coding with passion, creating with purpose."</p>
+                </div>
+
+                <div class="hero-image fade-in">
+                    <div class="image-wrapper">
+                        <div class="image-glow"></div>
+                        <img src="test.png" alt="Jumaila Junaid Profile Photo" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag"><i class="fas fa-user"></i> Introduction</span>
+                <h2 class="section-title">About <span class="accent-text">Me</span></h2>
+                <p class="section-subtitle">Get to know my background, academic journey, and passion for technology</p>
+            </div>
+
+            <div class="about-content fade-in">
+                <!-- Bio Summary Card -->
+                <div class="about-card bio-card">
+                    <p class="bio-text">
+                        I am a BIT undergraduate with a strong interest in Full Stack Development, Artificial
+                        Intelligence, and Cybersecurity.
+                    </p>
+                    <p class="bio-text" style="margin-top: 14px;">
+                        I enjoy building web development projects and strengthening my programming and technical skills
+                        through hands-on practice. I have experience working with <strong>HTML</strong>,
+                        <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>C</strong>, <strong>Python</strong>,
+                        and <strong>GitHub</strong>, and I am continuously learning new technologies to improve my
+                        development skills.
+                    </p>
+                    <p class="bio-text" style="margin-top: 14px;">
+                        Currently, I am pursuing my BIT degree while developing practical skills through projects and
+                        professional training. I am passionate about learning, solving problems, and creating useful
+                        technology solutions. I am open to opportunities, collaborations, and experiences
+                        that help me grow as a software developer.
+                    </p>
+                </div>
+
+                <!-- Info Grid: Education & Core Highlights -->
+                <div class="about-grid">
+                    <!-- Education Card -->
+                    <div class="about-card info-box">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3>Education & Training</h3>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>
+                                <strong>Bachelor of Information Technology (BIT)</strong>
+                                <span class="item-meta">University of Colombo (2026–2029)</span>
+                            </li>
+                            <li>
+                                <strong>Practical Training & Coursework</strong>
+                                <span class="item-meta">Hands-on projects and training in Web Development, Artificial
+                                    Intelligence, and Cybersecurity (Marstech)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Core Highlights Card -->
+                    <div class="about-card info-box">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-award"></i></div>
+                            <h3>Core Highlights</h3>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Practical project development using HTML, CSS,
+                                JavaScript, C, and Python</li>
+                            <li><i class="fas fa-check-circle"></i> Version control and collaborative and project
+                                managment using GitHub</li>
+                            <li><i class="fas fa-check-circle"></i> Hands-on problem-solving, analytical thinking, and
+                                secure programming practices</li>
+                            <li><i class="fas fa-check-circle"></i> Keen interest in exploring intelligent systems, AI
+                                concepts, and cybersecurity</li>
+                            <li><i class="fas fa-check-circle"></i> Eager to engage in learning opportunities and
+                                software development collaborations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Personal Interests Card -->
+                <div class="about-card interests-box">
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Personal Interests</h3>
+                    </div>
+                    <p class="interests-text">
+                        When I'm not coding, I enjoy hiking, photography, and contributing to open source projects.
+                        I also like exploring new technologies, learning AI concepts, and improving my cybersecurity
+                        skills.
+                    </p>
+                    <div class="interest-chips">
+                        <span class="chip"><i class="fas fa-mountain"></i> Hiking</span>
+                        <span class="chip"><i class="fas fa-camera"></i> Photography</span>
+                        <span class="chip"><i class="fas fa-code-branch"></i> Open Source</span>
+                        <span class="chip"><i class="fas fa-brain"></i> AI Concepts</span>
+                        <span class="chip"><i class="fas fa-shield-alt"></i> Cybersecurity</span>
+                    </div>
+
+                    <p class="tagline">"Learning, creating, and securing the digital world."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag"><i class="fas fa-laptop-code"></i> Technical Stack</span>
+                <h2 class="section-title">Skills & <span class="accent-text">Technologies</span></h2>
+                <p class="section-subtitle">Core technical proficiencies and development tools I work with</p>
+            </div>
+
+            <div class="skills-wrapper">
+                <!-- Frontend Skills -->
+                <div class="skill-category-block fade-in">
+                    <div class="category-header">
+                        <span class="category-tag"><i class="fas fa-code"></i> Frontend</span>
+                        <h3>Client-Side Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h4>HTML5</h4>
+                                <p>Structuring websites</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>CSS3</h4>
+                                <p>Responsive design & animations</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <p>Interactive UI & behavior</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-category-block fade-in">
+                    <div class="category-header">
+                        <span class="category-tag"><i class="fas fa-server"></i> Backend</span>
+                        <h3>Server-Side & Scripting</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <div class="skill-info">
+                                <h4>Node.js</h4>
+                                <p>Server-side development</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <p>Data handling & AI scripting</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <div class="skill-info">
+                                <h4>PHP</h4>
+                                <p>Server-side scripting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="skill-category-block fade-in">
+                    <div class="category-header">
+                        <span class="category-tag"><i class="fas fa-toolbox"></i> Workflow</span>
+                        <h3>Tools & Principles</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>Git</h4>
+                                <p>Version control</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                            <div class="skill-info">
+                                <h4>GitHub</h4>
+                                <p>Project hosting & collaboration</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-universal-access"></i></div>
+                            <div class="skill-info">
+                                <h4>Web Accessibility</h4>
+                                <p>Inclusive design principles</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag"><i class="fas fa-folder-open"></i> Portfolio</span>
+                <h2 class="section-title">My Projects & <span class="accent-text">Practical Work</span></h2>
+                <p class="section-subtitle">A selection of academic projects, practical assignments, lab practice, and
+                    hands-on technical work</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- AI Assignments -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-badge-tag"><i class="fas fa-brain"></i> AI Practice</div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Artificial Intelligence – Python Assignments</h3>
+                        <p>
+                            Developed Python-based AI assignments focused on logic building, problem-solving, and
+                            foundational AI concepts through hands-on practice.
+                        </p>
+                        <div class="technologies">
+                            <span>Python</span>
+                            <span>AI Basics</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Practice -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-badge-tag"><i class="fas fa-shield-alt"></i> Security Lab</div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cybersecurity & Ethical Hacking Practice</h3>
+                        <p>
+                            Practiced cybersecurity and ethical hacking concepts through guided labs, attack
+                            simulations, and hands-on exercises using platforms such as Hack The Box.
+                        </p>
+                        <div class="technologies">
+                            <span>Ethical Hacking</span>
+                            <span>Cybersecurity</span>
+                            <span>Hack The Box</span>
+                            <span>Attack Simulation</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Stack Assignments -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-badge-tag"><i class="fas fa-code"></i> Web Dev</div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Responsive Web Development – HTML & CSS Assignments</h3>
+                        <p>
+                            Designed and developed responsive web pages using HTML and CSS as part of Full Stack
+                            Development training and practical assignments.
+                        </p>
+                        <div class="technologies">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- C Programming & Networking -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="project-badge-tag"><i class="fas fa-network-wired"></i> Systems</div>
+                        <div class="image-placeholder">
+                            <i class="fas fa-server"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>C Programming & Networking Practice</h3>
+                        <p>
+                            Practiced C programming in Linux environments while developing practical knowledge of
+                            networking concepts through hands-on sessions.
+                        </p>
+                        <div class="technologies">
+                            <span>C Programming</span>
+                            <span>Linux</span>
+                            <span>Networking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Communication</span>
+                <h2 class="section-title">Get In <span class="accent-text">Touch</span></h2>
+                <p class="section-subtitle">I am open to internship opportunities, collaborations, and learning
+                    experiences in Full Stack Development, AI, and Cybersecurity.</p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Info Card -->
+                <div class="contact-card contact-info fade-in">
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-address-card"></i></div>
+                        <h3>Contact Information</h3>
+                    </div>
+                    <p class="contact-intro">Feel free to connect with me through email or my professional profiles:</p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="item-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="item-label">Email</span>
+                                <a href="mailto:jumaila.it@gmail.com" class="item-value">jumaila.it@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="item-label">Location</span>
+                                <span class="item-value">Sri Lanka</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="item-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div>
+                                <span class="item-label">Education Status</span>
+                                <span class="item-value">BIT Student – University of Colombo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <h4>Connect With Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/jumaila-junaid" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jumaila-junaid-861492391" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:jumaila.it@gmail.com" class="social-icon" aria-label="Email" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="contact-card contact-form-wrapper fade-in">
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-paper-plane"></i></div>
+                        <h3>Send a Message</h3>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-user input-icon"></i>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope input-icon"></i>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <div class="input-with-icon textarea-wrap">
+                                <i class="fas fa-comment-alt input-icon textarea-icon"></i>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                                    required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <p class="form-status" id="formStatus" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo"><code>&lt;JJ/&gt;</code> Jumaila Junaid</a>
+                <p class="footer-tagline">
+                    Full Stack Developer | AI & Cybersecurity Enthusiast
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jumaila Junaid. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
